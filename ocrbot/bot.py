@@ -15,7 +15,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 
-def main(): 
+def main():
     updater = Updater(BOT_TOKEN,use_context=True)
     updater.bot.set_my_commands([("start","start the bot"),("help","Get list of commands")])
     dp=updater.dispatcher
